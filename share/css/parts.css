@@ -1,0 +1,762 @@
+@charset "utf-8";
+
+#product_order-area {
+	width: 100%;
+	border-bottom: 2px solid #efefef;
+}
+
+.product_img-wrapper {
+	width: 400px;
+	padding: 20px 0 20px 20px;
+	float:left;
+}
+
+#main_pic {
+	overflow: hidden;
+}
+
+.main_product-img {
+	width: 300px;
+  margin: 0 auto 10px;
+	overflow:fd hidden;
+}
+
+.slider-for-list {
+	width: 300px;
+	float: left;
+}
+
+.slider-nav {
+	width: 300px;
+  padding: 0 50px;
+}
+
+.img_list-cont:last-child {
+  margin-right: 0;
+}
+
+.img_list-frame {
+	border: 2px solid #efefef;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.slick-current .img_list-frame{
+	border: 2px solid #0D2134;
+}
+
+.mar5:last-child {
+	margin-right: 0;
+}
+
+/* エラーメッセージ */
+.error_message_area {
+	/* width: 100%; */
+	padding: 20px;
+	margin: 10px 20px 20px;
+	border: 2px solid #FF5868;
+	background-color: #FFEBEA;
+
+}
+
+.error_title {
+	color: #FF5868;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.error_message2 {
+	color: #FF5868;
+}
+
+.page_title {
+	margin: 20px;
+}
+
+.page_title_h2 {
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #D9E1E4;
+}
+
+.page_title_h3 {
+	margin-bottom: 15px;
+	padding-left: 5px;
+	border-left: 4px solid #B3C3CA;
+}
+
+.page_title_h4 {
+	font-weight: bold;
+}
+
+.top_carousel-space {
+	width: 100%;
+}
+
+.top_carousel {
+	width: 100%;
+}
+
+.top_carousel-list {
+	display: inline-block;
+}
+
+/* オーダーフォーム */
+.frame-order_form{
+
+}
+
+.arrow_prev2 {
+	border-top: solid 8px #fff;
+	border-right: solid 8px #fff;
+}
+
+.arrow_next2 {
+	border-top: solid 8px #fff;
+	border-right: solid 8px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.favorite_link {
+	width: 100%;
+	text-decoration: none;
+	float: left;
+}
+
+.link-favorite_and_sns {
+	width: 100%;
+	padding: 10px 10px 0;
+}
+
+
+
+.icon-sns_link {
+	margin-right: 10px;
+	float: right;
+}
+
+.icon_list-cont{
+	width: 40px;
+	display: block;
+	float: left;
+}
+
+.icon_list-cont:last-child {
+	margin-right: 0;
+}
+
+.icon_img-size {
+  border-radius: 50px;
+}
+
+.favorite_link-under_carousel {
+	width: 120px;
+	font-size: 18px;
+	line-height: 40px;
+	text-decoration: none;
+	float: left;
+}
+
+
+
+
+
+#staff_review {
+	padding: 20px;
+	box-sizing: border-box;
+	border-bottom: 2px dotted #F4F7F8;
+}
+
+.title-staff_review {
+	margin-bottom: 20px;
+}
+
+.frame-staff_review {
+	padding: 20px;
+}
+
+.staff_review_area {
+	display: inline-block;
+}
+
+.staff_img {
+	width: 80px;
+	float:left;
+	margin-right: 20px;
+}
+
+.staff_comment-wrapper {
+	width: 800px;
+	position: relative;
+ 	margin: 0 0 1.5em 100px;
+	font-size: 16px;
+	background: #FFF;
+ 	border: solid 3px #efefef;
+ 	box-sizing: border-box;
+	/* float:left; */
+}
+
+.staff_comment-wrapper:before {
+	content: "";
+	position: absolute;
+	top: 25%;
+	left: -24px;
+ 	margin-top: -12px;
+	border: 12px solid transparent;
+	border-right: 12px solid #FFF;
+ 	z-index: 2;
+}
+
+.staff_comment-wrapper:after {
+	content: "";
+	position: absolute;
+	top: 25%;
+	left: -30px;
+ 	margin-top: -14px;
+	border: 14px solid transparent;
+	border-right: 14px solid #efefef;
+ 	z-index: 1;
+}
+
+.staff_comment-frame {
+	padding: 10px;
+}
+
+.staff_info {
+	padding: 10px;
+	border-bottom: 2px dotted #F4F7F8
+}
+
+.staff_comment {
+	padding: 10px 0;
+}
+
+#staff_blog {
+	width: 100%;
+	padding: 20px;
+	border-bottom: 2px dotted #D9E1E4;
+}
+
+.staff_blog-list {
+	display: none;
+}
+
+.cont-staff_blog {
+	display: none;
+}
+
+.border_bottom-staff_blog {
+	border: 2px dotted #F4F7F8;
+}
+
+#product_info_sub {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	border-bottom: 2px dotted #D9E1E4;
+}
+
+.item_title {
+	padding: 10px;
+	border: solid #DDE4E7;
+	border-width: 2px 2px 0 2px;
+	text-align: center;
+}
+
+.item_title_cont {
+	padding: 10px;
+}
+
+.tabel_one_line:last-child > .item_title {
+	border-width: 2px 2px 2px 2px
+}
+
+
+.product_info_sub-table_link {
+	color:#0000cc;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.product_info_sub-table_link:after {
+	content: ">";
+	color: #000;
+	margin-left: 10px;
+}
+
+.product_info_sub-table_link:last-child:after {
+	content: none;
+	margin-left: 0;
+}
+
+.category_list {
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+.category_item {
+	/* margin-bottom: 10px; */
+	list-style-type: disc
+}
+
+.category_item:first-child {
+	margin-bottom: 10px;
+}
+
+
+#related_product {
+	padding: 20px;
+	border-bottom: 2px dotted #D9E1E4;
+}
+
+.related_product_title {
+	font-size: 20px;
+}
+
+#user_review {
+	padding: 20px;
+	border-bottom: 2px dotted #D9E1E4;
+}
+
+.button-review_write {
+  padding: 0.7em 1em;
+	box-shadow: 0 4px #E8EDEF;;
+	background-color: #f39800;
+	margin: -8px 0 0 10px;
+	font-size: 14px;
+	border-radius: 4px;
+	text-decoration: none;
+	float: left;
+}
+
+.user_review_frame {
+	padding: 20px;
+}
+
+.user_review_title {
+	font-size: 20px;
+	float: left;
+}
+
+.user_pic {
+	width: 70px;
+	margin-right: 20px;
+	float:left;
+}
+
+.pic-frame {
+  border-radius: 50px;
+}
+
+.user_review-area {
+	width: 800px;
+	margin: 0 0 1.5em 100px;
+	padding: 10px;
+	background: #FFF;
+ 	border: solid 3px #efefef;
+ 	box-sizing: border-box;
+	position: relative;
+}
+
+.user_review-area::before {
+	content: "";
+	position: absolute;
+	top: 14%;
+	left: -24px;
+	margin-top: -12px;
+	border: 12px solid transparent;
+	border-right: 12px solid #FFF;
+	z-index: 2;
+}
+
+.user_review-area::after {
+	content: "";
+	position: absolute;
+	top: 14%;
+	left: -30px;
+	margin-top: -14px;
+	border: 14px solid transparent;
+	border-right: 14px solid #efefef;
+	z-index: 1;
+}
+
+.user_name {
+  margin: 10px 0;
+}
+
+.user_satisfaction {
+	margin-bottom: 20px;
+	color: #F39800;
+}
+
+.user_comment {
+	color: #10173C;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.comment_detail {
+	margin: 5px 0 10px;
+}
+
+.button_wrapper {
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.button-more_review {
+	padding: 0.7em 3em;
+	margin: 0 auto;
+	border-radius: 4px;
+	border-style: none;
+	text-decoration: none;
+	box-shadow: 0 4px #E8EDEF;
+	background-color: #2d4758;
+}
+
+#lately_looked_product {
+	padding: 20px;
+}
+
+.list_frame {
+	width: 100%;
+}
+
+#bottom_blank {
+	height: 200px;
+	border-bottom: 2px solid #efefef;
+}
+
+.comment {
+	margin: 30px 0;
+	font-size: 20px;
+	text-align: center;
+}
+
+@media screen and (max-width:768px) {
+
+	/* パンくず */
+
+
+	.bread_crumb-list {
+		width: 100%;
+	}
+
+	/* 商品画像 */
+	#product_order-area {
+		width: 100%;
+		position: relative;
+	}
+
+	.link-favorite_and_sns {
+		padding: 10px;
+		background-color: #E8EDEF;
+	}
+
+
+	#main_pic {
+		display: none;
+	}
+
+	.product_img-wrapper {
+		width: 100%;
+		padding: 0;
+	}
+
+	.img_carousel {
+		width:100%;
+		margin: 150px 0 40px;
+	}
+
+	.slider-nav {
+		width: 100%;
+		padding: 0;
+	}
+
+	.slick-current .img_list-frame{
+		border: 2px solid #E6E6E6;
+	}
+
+	.img_list-frame {
+		width: 100%;
+	}
+
+	/* 注文ボタン */
+
+
+
+
+
+
+
+
+
+
+
+
+	.button_frame {
+		width: 100%;
+	}
+
+	.favorite_link {
+		clear: both;
+	}
+
+
+
+
+
+
+
+
+
+	.favorite_link-under_carousel {
+		color: #7D7D7D;
+	}
+
+	/* 商品情報 */
+
+
+	/* スタッフレビュー */
+	#staff_review {
+		padding: 0;
+	}
+
+	.title-staff_review {
+		padding: 10px;
+		margin-bottom: 0;
+		text-align: left;
+		color: #fff;
+		background-color: 	#2D4758;
+	}
+
+	.staff_review_area {
+		width: 100%;
+	}
+	.staff_img {
+		width: 60px;
+	}
+
+	.staff_comment-wrapper {
+		width: 88%;
+		margin: 0 0 1.5em 5em;
+	}
+
+	.staff_info {
+		text-align: left;
+	}
+
+	.staff_comment {
+		text-align: left;
+	}
+
+	/* スタッフブログ */
+	#staff_blog {
+		border: 0;
+		padding: 0;
+	}
+
+	.product_info_sub {
+		width: 100%;
+	}
+
+	.staff_blog-title {
+		padding: 10px;
+		text-align: left;
+		color: #fff;
+		background-color: 	#2D4758;
+	}
+
+	.staff_blog-list {
+		display: block;
+		width: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.staff_blog-cont {
+		width: 48%;
+		height: 150px;
+		float: left;
+		text-align: left;
+	}
+
+	.staff_blog-cont_message {
+		padding: 60px 0 60px 20px;
+		color: #fff;
+		box-sizing: border-box;
+	}
+
+	.staff_blog-cont:first-child {
+		margin-right: 4%;
+		background-image: url("../images/test3.jpg");
+		background-size: cover;
+	}
+
+	.staff_blog-cont:last-child {
+		border: 2px solid #000;
+		box-sizing: border-box;
+	}
+
+	.staff_blog-cont_movie {
+		height: 78%;
+	}
+
+	.staff_blog-cont_message_bar {
+		width: 100%;
+		padding: 10px 0;
+		font-size: 0.6em;
+		display: inline-block;
+		text-align: center;
+		background-color: #231815;
+		color: #fff;
+	}
+
+
+
+	/* 関連商品 */
+	#related_product {
+		width: 100%;
+		padding: 0;
+		border: 0;
+	}
+
+	.slick-active > .img_list-frame{
+		padding: 0 !important;
+	}
+
+	.product_img-list {
+		padding: 0;
+		margin-left: -5%;
+	}
+
+	.product_img-list .slick-clone {
+		overflow: hidden !important;
+	}
+
+	.product_img-list .slick-slide {
+		margin-right: 5px;
+	}
+
+	.title-other_product {
+		text-align: left;
+	}
+
+	.item_title {
+		width: 120px;
+	}
+
+	.item_title_cont {
+		text-align: left;
+	}
+
+	/* ユーザーレビュー */
+	#user_review {
+		padding: 0;
+		border-bottom: 0;
+	}
+
+	.button_wrapper {
+		margin-bottom: 20px;
+	}
+
+	#user_review {
+		padding: 0;
+		border-bottom: 0;
+	}
+
+	.user_review_title {
+		width: 100%;
+		padding: 10px 20px;
+		color: #fff;
+		background-color: #2D4758;
+		text-align: left;
+		display: inline-block;
+		clear: both;
+	}
+
+	.user_list {
+		margin-left: 10px;
+	}
+
+	.user_pic {
+		width: 60px;
+		margin-right: 10px;
+	}
+
+	.user_review-area {
+		width: 87%;
+		margin: 0 0 1.5em 80px;
+	}
+
+	.user_name {
+		text-align: left;
+	}
+
+	.user_satisfaction {
+		text-align: left;
+	}
+
+	.user_comment {
+		text-align: left;
+	}
+
+	.comment_detail {
+		text-align: left;
+	}
+
+	.button_wrapper {
+		margin-bottom: 20px;
+	}
+
+	.button-review_write {
+		padding: 0.8em 2em;
+		display: block;
+		margin: 10px 20px 0 0;
+		float: right;
+	}
+
+	/* 最近閲覧した商品 */
+	#lately_looked_product {
+		padding: 0;
+	}
+
+	.related_product_title {
+		text-align: left;
+		padding: 10px 20px;
+		color: #fff;
+		background-color: #2D4758;
+	}
+
+}

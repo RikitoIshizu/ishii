@@ -1,0 +1,335 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url('../../../images/ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  /* top: 29%; */
+  top: 60px;
+  display: block;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  background: #fff;
+  border-top: 3px solid #2D4758;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+  /* color: transparent; */
+  outline: none;
+  /* background: transparent; */
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before,
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+  opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+  /* font-family: 'slick'; */
+  /* font-size: 20px; */
+  /* line-height: 1; */
+  /* opacity: .75; */
+  /* color: white; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: 16px;
+  border-left: 3px solid #2D4758;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.slick-next {
+  right: 21px;
+  border-right: 3px solid #2D4758;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+[dir='rtl'] .slick-prev,
+[dir='rtl'] .slick-next {
+  right: -25px;
+  left: auto;
+}
+
+.slick-prev:before,
+[dir='rtl'] .slick-next:before {
+  /* content: '←'; */
+}
+
+.slick-next:before,
+[dir='rtl'] .slick-prev:before {
+  /* content: '→'; */
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 10px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  /* display: inline-block; */
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+  outline: none;
+}
+
+.slick-dots li button:before {
+  /* font-family: 'slick'; */
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '○';
+  text-align: center;
+  /* opacity: .25; */
+  color: 	#2D4758;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  /* opacity: .75; */
+  /* color: 	#2D4758; */
+}
+
+.other_product .slick-list,
+.slick-active > .img_list-frame {
+	padding: 0 !important;
+}
+
+#thumbnail-list > .slick-list {
+  z-index: 2;
+}
+
+#thumbnail-list > .slick-prev {left: 20px; top: 35%;}
+#thumbnail-list > .slick-next {right: 35px; top: 35%;}
+
+.product_img-list .slick-clone {
+	overflow: hidden !important;
+}
+
+.product_img-list .slick-slide {
+	margin-right: 5px;
+}
+
+.slick-current .img_list-cont{
+	border: 2px solid #0D2134;
+}
+
+/* ecトップカルーセル */
+.main_banner{display: block;}
+.main_banner li img{width:100%;}
+.sp_only{display:none !important;}
+
+.main_banner .slick-prev,
+.main_banner .slick-next {
+  width: 25px;
+  height: 40px;
+  background: url("../../../images/line_arrow_white.png") no-repeat;
+  border:0;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+.main_banner .slick-prev {
+  top: 40%;
+  border-left: 0;
+  z-index: 10;
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.main_banner .slick-next {
+  top: 41.5%;
+  border-right: 0;
+}
+
+.main_banner .slick-dots {
+  background: #00003B;
+  margin: 10px 0 -10px;
+  padding: 5px 0 7px 0;
+  position: static;
+}
+
+.main_banner .slick-dots li {
+  display: inline-block;
+  margin: 0;
+  line-height:1;
+}
+
+.main_banner .slick-dots li button:before {
+  font-size: 30px;
+  color: #fff;
+}
+
+.main_banner .slick-dots li.slick-active button:before{
+  content: '●';
+}
+
+.main_banner ul {
+  margin-top: 10px;
+}
+
+.main_banner .slick-slide li {
+  position: relative;
+}
+
+.main_banner .slick-slide.slick-active li:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: none;
+}
+
+.main_banner .slick-slide li:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.topics-product_list .slick-prev {top: 44%;}
+.topics-product_list .slick-next {z-index: 4;top: 44%;right: 5px;}
+.topics-product_list .slick-list {margin-left: 15px;}
+
+@media screen and (max-width:768px) {
+
+  .slick-current .img_list-frame{border: 2px solid #E6E6E6;}
+  .slick-current .img_list-cont{border: 3px solid #CCCCCC;}
+
+  #thumbnail-list > .slick-dots {
+		position: static;
+	}
+
+	#thumbnail-list .slick-dots li {
+    display: inline-block;
+  }
+
+  #thumbnail-list .slick-track {
+    padding-left: 5px;
+  }
+
+  .slick-active >.img_list-frame{padding: 0 !important;}
+	.product_img-list.slick-clone {overflow: hidden !important;}
+	.product_img-list.slick-slide {margin-right:5px;}
+
+  .slick-dots li button:before {
+    font-size: 35px;
+  }
+
+  .slick-dots li.slick-active button:before{
+    content: '●';
+  }
+
+  #related_product .slick-dotted.slick-slider,
+  #lately_looked_product .slick-dotted.slick-slider {
+    margin-top: 20px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+
+  .main_banner ul {margin-top: 0;}
+  .main_banner .slick-slide {margin-right: 0;}
+  .main_banner .slick-slide li {display: block !important;}
+
+  .main_banner .slick-dots {
+    margin: 0;
+    padding: 0 0 10px;
+  }
+
+
+}

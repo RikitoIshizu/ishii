@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>石井スポーツクラブ</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords" content="石井スポーツクラブ">
+	<meta name="description" content="石井スポーツクラブ">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<link rel="stylesheet" type="text/css" href="../../share/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../share/css/lib/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="../../share/css/lib/slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="../../share/css/common.css">
+
+	<script type="text/javascript" src="../../share/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../share/js/lib/slick/slick.min.js"></script>
+	<script type="text/javascript" src="../../share/js/lib/elevetorzoom/jquery.elevatezoom.js"></script>
+	<script type="text/javascript" src="../../share/js/imgzoom.js"></script>
+	<script type="text/javascript" src="../../share/js/common.js"></script>
+</head>
+<body>
+	<form action="" method="post" id="destination_regiser_chenge" class="modal-content-innar">
+
+		<div class="error_message_area error_message_area_mab">
+      <strong class="error_title">ERROR TITLE</strong>
+      <span class="error_message">ERROR MESSAGE......................</span>
+		</div>
+
+		<h1 class="page_title">お届け先住所登録・変更</h1>
+		<table class="table_frame">
+			<tbody class="table_body">
+
+				<tr class="member_registration-item clears2">
+					<th class="item_name">
+						お名前<span class="necesery_check bg-red1">必須</span>
+					</th>
+					<td class="input_item">
+						<input type="text" name="名前01" placeholder="姓" class="input_cont2">
+						<input type="text" name="名前02" placeholder="名" class="input_cont2">
+						<p class="error_line"><span class="error_message2">ERROR MESSAGE......................</span></p>
+					</td>
+				</tr>
+
+				<tr class="member_registration-item clears2">
+					<th class="item_name">
+						フリガナ<span class="necesery_check bg-red1">必須</span>
+					</th>
+					<td class="input_item">
+						<input type="text" name="かな01" placeholder="セイ" class="input_cont2">
+						<input type="text" name="かな02" placeholder="メイ" class="input_cont2">
+						<p class="error_line"><span class="error_message2">ERROR MESSAGE......................</span></p>
+					</td>
+				</tr>
+
+				<tr class="member_registration-item clears2">
+					<th class="item_name">
+						郵便番号<span class="necesery_check bg-red1">必須</span>
+					</th>
+					<td class="input_item">
+						<span class="address_frame">
+							<input type="search" name="郵便番号01" maxlength="3" class="address1_input">
+							<span class="hyphen">-</span>
+								<input type="search" name="郵便番号02" maxlength="4" class="address2_input">
+						</span>
+						<button type="button" name="address" value="住所自動入力" class="btn-default address_search ">住所自動入力</button>
+						<p class="error_line"><span class="error_message2">ERROR MESSAGE......................</span></p>
+					</td>
+				</tr>
+
+				<tr class="member_registration-item clears2">
+					<th class="item_name valign-t">
+						住所<span class="necesery_check bg-red1">必須</span>
+					</th>
+					<td class="input_item">
+						<select name="prefecture" name="都道府県" class="prefecture_item">
+							<option value="" selected>都道府県を選択</option>
+							<option value="北海道">北海道</option>
+							<option value="青森県">青森県</option>
+							<option value="岩手県">岩手県</option>
+							<option value="宮城県">宮城県</option>
+							<option value="秋田県">秋田県</option>
+							<option value="山形県">山形県</option>
+							<option value="福島県">福島県</option>
+							<option value="茨城県">茨城県</option>
+							<option value="栃木県">栃木県</option>
+							<option value="群馬県">群馬県</option>
+							<option value="埼玉県">埼玉県</option>
+							<option value="千葉県">千葉県</option>
+							<option value="東京都">東京都</option>
+							<option value="神奈川県">神奈川県</option>
+							<option value="新潟県">新潟県</option>
+							<option value="富山県">富山県</option>
+							<option value="石川県">石川県</option>
+							<option value="福井県">福井県</option>
+							<option value="山梨県">山梨県</option>
+							<option value="長野県">長野県</option>
+							<option value="岐阜県">岐阜県</option>
+							<option value="静岡県">静岡県</option>
+							<option value="愛知県">愛知県</option>
+							<option value="三重県">三重県</option>
+							<option value="滋賀県">滋賀県</option>
+							<option value="京都府">京都府</option>
+							<option value="大阪府">大阪府</option>
+							<option value="兵庫県">兵庫県</option>
+							<option value="奈良県">奈良県</option>
+							<option value="和歌山県">和歌山県</option>
+							<option value="鳥取県">鳥取県</option>
+							<option value="島根県">島根県</option>
+							<option value="岡山県">岡山県</option>
+							<option value="広島県">広島県</option>
+							<option value="山口県">山口県</option>
+							<option value="徳島県">徳島県</option>
+							<option value="香川県">香川県</option>
+							<option value="愛媛県">愛媛県</option>
+							<option value="高知県">高知県</option>
+							<option value="福岡県">福岡県</option>
+							<option value="佐賀県">佐賀県</option>
+							<option value="長崎県">長崎県</option>
+							<option value="熊本県">熊本県</option>
+							<option value="大分県">大分県</option>
+							<option value="宮崎県">宮崎県</option>
+							<option value="鹿児島県">鹿児島県</option>
+							<option value="沖縄県">沖縄県</option>
+						</select>
+						<input type="text" name="住所01" placeholder="市区町村" class="input_cont2">
+						<input type="text" name="住所02" placeholder="町名・番地" class="input_cont2">
+						<input type="text" name="住所03" placeholder="アパート・マンション・ビル" class="input_cont2">
+						<p class="error_line"><span class="error_message2">ERROR MESSAGE......................</span></p>
+					</td>
+				</tr>
+
+				<tr class="member_registration-item clears2">
+					<th class="item_name">
+						携帯電話<span class="necesery_check bg-red1">必須</span>
+					</th>
+					<td class="input_item">
+						<span class="birthday_area">
+							<input type="text" name="携帯番号01" value="" maxlength="3" class="phone_number">
+							<span class="hyphen">-</span>
+							<input type="text" name="携帯番号02" value="" maxlength="4" class="phone_number">
+							<span class="hyphen">-</span>
+							<input type="text" name="携帯番号03" value="" maxlength="4" class="phone_number">
+						</span>
+						<p class="error_line clears"><span class="error_message2">ERROR MESSAGE......................</span></p>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<div class="button_area clears2">
+			<button type="button" name="button" id="modal-close" class="btn-default" onClick="window.close(); return false;">
+				閉じる
+			</button>
+			<button type="submit" name="button" class="btn_navy" onclick="location.href='select_purchase.html'">
+				登録する
+			</button>
+		</div>
+
+	</form>
+</body>
+</html>
